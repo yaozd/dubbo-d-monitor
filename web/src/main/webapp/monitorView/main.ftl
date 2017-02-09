@@ -5,7 +5,7 @@
 <!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
 <!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
 <!--[if !IE]><!-->
-<html lang="en">
+<html lang="zh">
 <!--<![endif]-->
 <!-- BEGIN HEAD -->
 <head>
@@ -49,6 +49,11 @@
             }
         }
     </style>
+    <script type="text/javascript">
+        function appListButtonClick(){$('#appListButton a').trigger("click");}
+        function serviceButtonClick(){$('#serviceButton a').trigger("click");}
+        function hostButtonClick(){$('#hostButton a').trigger("click");}
+    </script>
 </head>
 
 <body class="page-header-fixed page-sidebar-closed-hide-logo " style="overflow-x: hidden;">
@@ -78,6 +83,26 @@
                     一键有惊喜
                 </button>
 
+            </div>
+            <div class="btn-group">
+            <button type="button" class="btn red-haze btn-sm " id="for_fun_btn" onclick="window.location.reload();">
+                首页
+            </button>
+            </div>
+            <div class="btn-group">
+                <button type="button" class="btn red-haze btn-sm " id="for_fun_btn" onclick="appListButtonClick()">
+                    application-服务
+                </button>
+            </div>
+            <div class="btn-group">
+                <button type="button" class="btn red-haze btn-sm " id="for_fun_btn" onclick="serviceButtonClick()">
+                    Service-方法
+                </button>
+            </div>
+            <div class="btn-group">
+                <button type="button" class="btn red-haze btn-sm " id="for_fun_btn" onclick="hostButtonClick()">
+                    Hosts-主机
+                </button>
             </div>
         </div>
         <!-- END PAGE ACTIONS -->
